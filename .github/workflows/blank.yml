@@ -1,13 +1,10 @@
-name: Do things every 1 minutes
 on:
   schedule:
-    - cron: "*/1 * * * *"
-  push:
-    branches:
-      - 'master'
+    - cron: '*/5 * * * *'
+
 jobs:
-  test:
+  test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - name: echo test
-        run: echo 'test'
+      - name: Every time
+        run: echo "This step will always run"
