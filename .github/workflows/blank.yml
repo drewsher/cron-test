@@ -1,15 +1,16 @@
-name: Master
-on:
-  push:
-    branches:
-      - master
+name: Experiment
+on: 
   schedule:
-    - cron: '*/1 * * * *'
+  - cron: '*/1 * * * *'
+
 jobs:
-  build:
+  job1:
+    name: Debug
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Running
-      run: |
-        echo "Running!"
+    - name: Git checkout
+      uses: actions/checkout@v2
+      with: { ref: debug }
+    - name: List files
+      run: ls
