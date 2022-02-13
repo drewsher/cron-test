@@ -10,15 +10,15 @@ jobs:
     steps:
     - name: echo test
       run: echo cron
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v3
-      with:
-        server_address: mail@drewsher.ru
-        username: drewsher
-        password: YaBelarus101
-        subject: Github Actions job result
-        to: diwwwka@gmail.com
-        from: Luke Skywalker # <mail@drewsher.ru>
+#     - name: Send mail
+#       uses: dawidd6/action-send-mail@v3
+#       with:
+#         server_address: mail@drewsher.ru
+#         username: drewsher
+#         password: YaBelarus101
+#         subject: Github Actions job result
+#         to: diwwwka@gmail.com
+#         from: Luke Skywalker # <mail@drewsher.ru>
 
 
 
