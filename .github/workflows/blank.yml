@@ -2,13 +2,12 @@ name: Run periodically.
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: echo test
       run: echo cron
     - name: Send mail
