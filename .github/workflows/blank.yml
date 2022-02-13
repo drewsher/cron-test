@@ -2,9 +2,9 @@ name: Do things every 5 minutes
 on:
   schedule:
     - cron: "*/1 * * * *"
-  jobs:
-    echo:
-      runs-on: ubuntu-latest
-      steps:
-        - name: echo test
-          run: echo 'test'
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo test
+        run: echo 'test'
